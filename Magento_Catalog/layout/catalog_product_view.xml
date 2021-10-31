@@ -1,0 +1,17 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="product.info.main">
+			<block class="Magento\Catalog\Block\Product\View" 
+				   name="product.info.company.name" 
+				   template="Magento_Catalog::product/view/company_name.phtml" after="product.info.social">
+				<arguments>
+					<argument name="at_call" xsi:type="string">getCompanyName</argument>
+					<argument name="at_code" xsi:type="string">company_name</argument>
+					<argument name="css_class" xsi:type="string">company-name</argument>
+					<argument name="at_label" xsi:type="string">Company name</argument>
+					<argument name="add_attribute" xsi:type="string">itemprop="company_name"</argument>
+				</arguments>
+			</block>
+		</referenceContainer>
+	</body>
+</page>
