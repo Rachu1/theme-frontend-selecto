@@ -1,0 +1,16 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .action.primary,
+    .action-primary {
+        .lib-button-primary(
+            @_button-background: @selecto__primary__color,
+            @_button-background-hover: @selecto__primary__color,
+            @_button-color-active: @selecto__primary__color,
+            @_button-border-hover: 1px solid @selecto__primary__color
+        );
+        .lib-css(border-radius,@button__border-radius);
+    }
+}
